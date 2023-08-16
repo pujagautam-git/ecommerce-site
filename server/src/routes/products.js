@@ -1,6 +1,6 @@
 const express=require('express')
 const router=express.Router()
-const {addNewProducts, getallproducts}=require('../controllers/products')
+const {addNewProducts,getallProducts }=require('../controllers/products')
 router.post('/products', addNewProducts)
-router.get('/products', getallproducts)
+router.get('/products', getallProducts)
 module.exports=router

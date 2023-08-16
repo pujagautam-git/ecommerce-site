@@ -42,27 +42,27 @@ const register = () => (
            
           <div className='form-validation'>
           <label for="fname">First name</label><br/>
-          <input placeholder="Enter your firstname" name="firstName" type="text" />
+          <Field placeholder="Enter your firstname" name="firstName" type="text" />
           {errors.firstName && touched.firstName ? (
             <div>{errors.firstName}</div>
           ) : null}<br/>
           <label for="lname">Last name</label><br/>
-          <input placeholder="Enter your last name"name="lastName" type="text" />
+          <Field placeholder="Enter your last name"name="lastName" type="text" />
           {errors.lastName && touched.lastName ? (
             <div>{errors.lastName}</div>
           ) : null}<br/>
           <label for="email">Email</label><br/>
-          <input  placeholder="Enter your email"name="email" type="email" />
+          <Field  placeholder="Enter your email"name="email" type="email" />
           {errors.email && touched.email ?(
              <div>{errors.email}</div>
            ) : null}<br/>
            <label for="password">Password</label><br/>
-          <input  placeholder="Enter password"name="password1" type="password" />
+          <Field  placeholder="Enter password"name="password1" type="password" />
           {errors.password1 && touched.password1 ?(
              <div>{errors.password1}</div>
            ) : null}<br/>
            <label for="confirm password">Confirm Password</label><br/>
-         <input placeholder="Confirm password"name="password2" type="password" />
+         <Field placeholder="Confirm password"name="password2" type="password" />
           {errors.password2 && touched.password2 ?(
              <div>{errors.password2}</div>
            ) : null}<br/>

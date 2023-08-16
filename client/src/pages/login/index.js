@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, input } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
 const SignupSchema = Yup.object().shape({
@@ -26,11 +26,11 @@ const login = () => (
       {({ errors, touched }) => (
         <Form>
           <div className='form'>
-          <input  placeholder="Enter your email or user"name="email" type="email" />
+          <Field  placeholder="Enter your email or user"name="email" type="email" />
           {errors.email && touched.email ?(
              <div>{errors.email}</div>
            ) : null}<br/>
-          <input  placeholder="Password"name="password" type="password" />
+          <Field placeholder="Password"name="password" type="password" />
           {errors.password && touched.password ?(
              <div>{errors.password}</div>
            ) : null}<br/>
