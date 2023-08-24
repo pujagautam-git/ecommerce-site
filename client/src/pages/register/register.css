@@ -3,14 +3,15 @@
   padding: 0;
 }
 
-div {
+.form-top {
   font-family: 'Times New Roman', Times, serif;
   background-color: hsl(208, 23%, 89%);
   height: 800px;
+  padding-top: 12px;
 
 }
 .form-validation {
-  height: 500px;
+  height: 515px;
   width: 370px;
   padding: 25px 55px 0 70px;
   text-align: left;
